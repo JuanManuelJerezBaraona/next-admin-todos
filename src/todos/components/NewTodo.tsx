@@ -4,7 +4,7 @@ import { FormEvent, useState } from "react";
 import { IoTrashOutline } from "react-icons/io5";
 
 // import { useRouter } from "next/navigation";
-import { addTodo } from "../actions/todo-actions";
+import { addTodo, deleteCompleted } from "../actions/todo-actions";
 
 // import * as todosApi from '@/todos/helpers/todos';
 
@@ -22,10 +22,12 @@ export const NewTodo = () => {
         // router.refresh();
     }
 
-    const deleteCompleted = async() => {
-        // await todosApi.deleteCompletedTodos();
-        // router.refresh();
-    }
+    // const deleteCompleted = async() => {
+    //     // await todosApi.deleteCompletedTodos();
+    //     // router.refresh();
+    // }
+
+
 
     return (
         <form onSubmit={ onSubmit } className='flex w-full'>
